@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>수강신청서</title>
+</head>
+<body>
+<h2> 수강 신청서 </h2>
+<label> 성명 <input type="text" name="name"> </label>
+<br>
+<label> 비밀키 <input type="password" name="password"> </label>
+<br>
+<label> 주소 <input type="text" name="address" > </label>
+<br><br>
+<label>교육과정
+    <select name="study">
+        <option><----교육과정을 선택해주세요----></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+</label>
+<br><br>
+    <fieldset>
+        <legend>희망 타임</legend>
+        <label for="nine">오전 9:00</label>
+        <input type="radio" name="time" id="nine" checked>
+        <label for="thirteen">오후 1:00</label>
+        <input type="radio" name="time" id="thirteen">
+        <label for="nineteen">오후 7:00</label>
+        <input type="radio" name="time" id="nineteen">
+    </fieldset>
+<br>
+    <fieldset>
+        <legend>알게된 동기</legend>
+        <input type="checkbox" name="" id="hobby1" checked>
+        <label for="hobby2">친구</label><input type="checkbox" name="" id="hobby2">
+        <label for="hobby3">배너광고</label><input type="checkbox" name="" id="hobby3">
+        <label for="hobby4">잡지</label><input type="checkbox" name="" id="hobby4">
+        <label for="hobby5">메일</label><input type="checkbox" name="" id="hobby5">
+        <label for="hobby6">기타</label><input type="checkbox" name="" id="hobby6">
+    </fieldset>
+<br>
+    <label for="message">기타 문의사항</label>
+    <textarea name="" id="message" cols="50" rows="10">
+궁금한점을 정확하게 입력하여 주시면 빠른 시일내에 연락드리겠습니다.
+    </textarea>
+
+<br><br>
+    <button>전송</button>
+    <input type="reset" value="다시 ">
+
+
+</body>
+</html>

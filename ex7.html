@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>클래스랑 아이디 선택자</title>
+    <!--   css 정의   -->
+    <style>
+    /* 클래스 정의 */
+    .box1 {text.align:center; border:1px solid gray; padding:10px}
+    .box2 {text.align:right; border:1px solid red; padding:10px}
+    /* 아이디 정의 */
+    #ulBox1 {background:lightgray;
+             text-decoration:underline;
+             width:500px;
+             margin:200px auto}
+    </style>
+
+
+</head>
+<body>
+<!--h2{클래스와 아이디 선택자}+hr+(div>h2{box$})*3+(ul>li{목록}*5)-->
+<h2>클래스와 아이디 선택자</h2>
+<hr>
+<div class="box1">
+    <h2>box1</h2>
+</div>
+<div>
+    <h2>box2</h2>
+</div>
+<div>
+    <h2>box3</h2>
+</div>
+<ul id="box1">
+    <li>목록</li>
+    <li>목록</li>
+    <li>목록</li>
+    <li>목록</li>
+    <li>목록</li>
+</ul>
+
+
+</body>
+</html>

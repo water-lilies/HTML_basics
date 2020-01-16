@@ -1,0 +1,78 @@
+
+>> CSS 적용방식
+- 인라인방식
+- head 영역의 style 태그
+- 별도의 css파일 연결방식 - 외장방식
+
+>> head 영역의 style 태그
+ <style>
+    선택자 { 속성:값; }
+ </style>
+
+CSS 주석
+/* 설명 */
+
+>> CSS 선택자
+
+
+>> 태그 선택자
+ : 현재 html 페이지의 임의 태그 전체의 디자인 적용
+ : 적용과정이 필요없고 모든 태그에 디자인 자동 적용
+
+>> 클래스 선택자
+ : html 요소중에서 필요한 부분에 직접 적용 가능
+Step1> 정의
+    .클래스이름{속성1:값1; 속성2:값2; ...}
+
+Step2> 적용
+ <태그명 class="클래스 이름">
+
+>> 아이디 선택자
+ : html 요소중에서 필요한 부분에 직접 적용 가능
+ : 문서에서 한번만 디자인 적용 가능
+Step1> 정의
+    #아이디이름 {속성1:값; 속성2:값2; ...}
+
+Step2> 적용
+    <태그명 id="아이디이름">
+
+>> 전체 선택자
+* {속성1:값1; 속성2:값2; ...}
+: 문서 전체에 삽입된 모든 요소에 디자인 적용
+: 초기화 (여백:padding, margin)
+
+* {margin:0; padding:0;}
+
+
+
+
+
+
+
+
+
+
+
+>> 박스 모델 1
+ - 블록요소 기준
+ - 가로크기 : width + border-left + border-right + padding-left + padding-right
+ - 세로크기 : height + border-top + height-bottom + padding-top + padding-bottom
+
+>> 박스 모델 2
+ 부모요소에 width/height 크기만으로 설정
+ box-sizing:border-box
+
+
+
+
+2019.07.23
+// CSS 레이아웃
+- float : 부유레이아웃
+- display
+- position
+
+
+
+
+
+

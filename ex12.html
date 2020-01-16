@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Position 방식</title>
+    <style>
+        /* static 포지션 */
+        #mailBox { height:500px;
+                    width:500px;
+                    background:yellowgreen;}
+        /* absolute 포지션 */
+        #pop1 { width:100px; height:100px;
+                background:black;
+                position:absolute;
+                left:50px; /* X 좌표 */
+                top:50px;  /* Y 좌표 */
+                }
+        /* fixed 포지션 */
+        #pop2 { width:50px; height:50px;
+                background:hotpink;
+                position:fixed;
+                /* left, right, top, bottom */
+                right:0; /* X 좌표 */
+                top:0;  /* Y 좌표 */
+               }
+        #pop3 { width:50px; height:50px;
+                background:hotpink;
+                position:fixed;
+                /* left, right, top, bottom */
+                right:0; /* X 좌표 */
+                bottom:0;  /* Y 좌표 */
+                }
+        /* relative 포지션 : 삽입된 위치가 0,0기준이 됨 */
+        /* y좌표는 top:숫자px
+           12시 방향은 음수값, 6시방향은 양수값 */
+        #mailBox2 { width:300px; height:300px;
+                    border:5px solid black;}
+        /* 1시 방향으로 배치 */
+        #mailBox2 div.sub1 { width:100px; height:100px;
+                             background:green;
+                             position:relative;
+                             top:-100px; left:100px}
+        /* 7시방향으로 배치 */
+        #mailBox2 div.sub2 { width:100px; height:100px;
+                             background:crimson;
+                             position:relative;
+                             top:100px; left:-100px}
+        /* 부모요소의 0,0이 자식요소의 기준좌표가 되는 방식
+            부모요소는 relative
+            자식요소는 absolute */
+        #mailBox3 { width:300px; height:300px;
+                    border:5px solid red;
+                    position:relative;
+                    margin:0 auto;}
+        #mailBox3 div.sub1 { width:100px; height:100px;
+                             background:gold;
+                             position:absolute;
+                             top:0;
+                             left:100px}
+        #mailBox3 div.sub2 { width:100px; height:100px;
+                             background:red;
+                             position:absolute;
+                             top:200px;
+                             left:0}
+
+    </style>
+</head>
+<body>
+<h1>CSS 레이아웃</h1>
+<hr>
+<!--div#mainBox+(div#pop$)*3-->
+    <div id="mailBox"></div>
+    <div id="pop1"></div>
+    <div id="pop2"></div>
+    <div id="pop3"></div>
+<!--div#mailBox2>div.sub$*2-->
+<div id="mailBox2">
+    <div class="sub1"></div>
+    <div class="sub2"></div>
+</div>
+<!--div#mailBox3>div.sub$*2-->
+<div id="mailBox3">
+    <div class="sub1"></div>
+    <div class="sub2"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 인라인 스타일</title>
+</head>
+<body>
+<!--
+CSS란?
+- 디자인 마크업
+- HTML 요소(글문단, 하이퍼링크, 이미지, 폼요소 ...)에 디자인(여백, 정렬, 색상, 배치...) 적용
+- Cascading Style Sheet
+- 웹표준
+    HTML(컨텐츠)
+    CSS(디자인)
+    JS(동적컨텐츠)
+- CSS 레이아웃
+
+// CSS의 종류 - 삽입방식에 따른 분류
+- 인라인방식
+- head 영역이 삽입하는 방식
+- 외장 방식 : 별도의 css파일에 저장
+
+// 인라인 방식
+<html태그 style="css속성:값;">
+
+-----------------------------------
+CSS 속성
+color : 글자색상값
+background-color : 배경색상값
+
+색상값?
+#000000 ~ #FFFFFF (16진수)
+  black     white
+#FF0000  red
+#00FF00  green
+#0000FF  blue
+영문색상명 사용가능
+
+font-size: 글자크기
+font-family: 글꼴 '맑은고딕'
+예) font-family: '맑은고딕',consoles;
+        앞에꺼가 없으면 뒤에꺼. 마지막은 영문글꼴.
+font-weight: bold.normal 진하게
+font-style:italic 기울임꼴
+font-decoration: underline(밑줄), none(밑줄없음)
+
+text-decoration: underline(밑줄), none(밑줄없음)
+line-height: 숫자+단위(%), 줄간격
+letter-spacing: 숫자+단위(px, em), 자간
+
+
+
+div
+division
+
+span
+인라인요소(글자)의 일부를 꾸미는 용도
+
+header
+footer
+aside
+nav
+section
+article
+
+-->
+<h1>CSS 인라인스타일</h1>
+<hr>
+<!--(div>h2{box$}+p{문단$}*3)*3-->
+<!---->
+<div style="background-color:gold;
+            color:brown">
+    <h2 style="text-align:center">box1</h2>
+    <p style="text-align;justify;width:500px">문단1</p>
+    <p style="width:80%">문단2</p>
+    <p style="width:500px;background-color:yellowgreen">문단3</p>
+</div>
+<div style="background-color:red;
+            color:white">
+    <h2>box2</h2>
+    <p>문단1</p>
+    <p>문단2</p>
+    <p>문단3</p>
+</div style="background-color:black;
+            color:white">
+<div>
+    <h2>box3</h2>
+    <p>문단1</p>
+    <p>문단2</p>
+    <p>문단3</p>
+</div>
+
+
+
+
+
+</body>
+</html>
