@@ -1,0 +1,72 @@
+
+// 프레임웍스란?
+별도의 설치과정이 필요함
+템플릿이 이미 등록되어있으므로 관련 레퍼런스를 참조하여 적용과정만 필요
+
+- 부트스트랩(bootstrap)
+- Jquery Mobile
+- 워드프레스
+
+
+
+
+
+// 부트스트랩 설치
+1개의 css파일, 2개의 js파일 연결
+
+1) 소스준비
+CON방식은? 웹상의 소스를 연결
+<!-- 부트스트랩 연결 -->
+    <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+Local 방식으로 소스 연결하기
+    1) CON 으로 연결된 연결주소를 웹브라우저에 붙여녛기
+    2) 원본 파일이 나오면 [Ctrl]+[S]
+    3) 작업폴더에 저장
+        1개의 css
+        2개의 js
+
+// 메인박스 만들기
+    div.container
+
+// 버튼 스타일
+    - 슬라이드 48
+    a / button / input:submit / input:rest
+    <태그명 class="btn btn-디자인명">
+
+    디자인명은?
+    primary / info / default / warning / danger
+
+// 패널
+// 그리드 시스템
+    슬라이드 12
+    - 기본규칙 : 한행에 12칸만 올 수 있다.
+    - 행 : div.row
+    - 셀(span) : div.col-xx-x
+    12개의 셀 구성
+    div.row>div.col-sm-1*12
+
+    4개의 셀 구성
+    div.row>div.col-sm-4*3
+
+    6개의 셀 구성
+    div.row>div.col-sm-6*2
+
+// 탭메뉴
+
+// 글리피콘이란?
+    그림문자 => UIUX 아이콘문자
+    벡터
+    fonts 폴더를 복사해서 작업폴더에 붙이기
+
+
+// 네비게이션
+// 병합패널
+// 모달 구현
+// 케로즐 갤러리 구현
+
+
+
+

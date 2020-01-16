@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--    부트스트랩 연결    -->
+    <link rel ="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        body > div > div:nth-of-type(1) {
+            border:1px solid black
+        }
+    </style>
+</head>
+<body>
+<!-- 메인박스 생성 -->
+<!--div.container-->
+<div class="container">
+    <h1> 부트스트랩 </h1>
+    <hr>
+    <h2>한칸에 4개 구성</h2>
+<!--    div.row>div.col-sm-3*4-->
+    <div class="row">
+        <div class="col-sm-3">1</div>
+        <div class="col-sm-3">2</div>
+        <div class="col-sm-3">3</div>
+        <div class="col-sm-3">4</div>
+    </div>
+    <h2>비율로 정의 3:6:3</h2>
+<!--div.row>div.col-sm-6*2-->
+    <div class="row">
+        <div class="col-sm-3">
+            <img src="../html/images/ah.png" alt="">
+        </div>
+        <div class="col-sm-3">
+            <ul>
+                <li>목록1</li>
+                <li>목록2</li>
+                <li>목록3</li>
+            </ul>
+        </div>
+        <div class="col-sm-3">
+            <ul>
+                <li>목록1</li>
+                <li>목록2</li>
+                <li>목록3</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+    <h2>탭 메뉴</h2>
+<!--    ul.nav.nav-tabs>(li>a[href=#]{Menu$})*5-->
+    <ul class="nav nav-tabs">
+        <li><a href="#">Menu1</a></li>
+        <li><a href="#">Menu2</a></li>
+        <li><a href="#">Menu3</a></li>
+        <li><a href="#">Menu4</a></li>
+        <li><a href="#">Menu5</a></li>
+    </ul>
+
+    <hr>
+<!--    nav.navbar.navbar-default-->
+<!--    >div.container-fluid-->
+<!--    >(div.navbar-header+ul.nav.navbar-nav)-->
+<!--    >(li>a{Menu$})*5-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- 왼쪽 -->
+            <div class="navbar-header">
+                <a href="">Menu1</a>
+            </div>
+            <!-- 오른쪽 -->
+            <ul class="nav navbar-nav">
+                <li><a href="">Menu1</a></li>
+                <li><a href="">Menu2</a></li>
+                <li><a href="">Menu3</a></li>
+                <li><a href="">Menu4</a></li>
+                <li><a href="">Menu5</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <hr>
+
+
+
+
+
+
+</div> <!-- container End -->
+</body>
+</html>
